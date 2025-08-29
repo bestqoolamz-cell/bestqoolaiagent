@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Chatbot</title>
+    <style>
+
+    </style>
+</head>
+<flowise-fullchatbot></flowise-fullchatbot>
+<body style="margin: 0">
+
+    <script type="module">
+      import Chatbot from 'https://cdn.jsdelivr.net/gh/bestqoolamz-cell/aiagent_embed@38f0f1e2b174ba65d53c9ff228a34fa4d222dbe5/dist/web.js';
+      Chatbot.initFull({
+        chatflowid: "81f03875-e4fc-4a68-8222-f43f499ff85e",
+            apiHost: "https://flowise-bestqool.onrender.com",
+            theme: {
+            button: {
+                backgroundColor: '#e70012',
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://cdn.shopify.com/s/files/1/0348/5951/5949/files/chatbot_icon_0801-1.png?v=1755569644',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: true
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi There 👋!',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+            disclaimer: {
+                title: 'Disclaimer',
+                message: "This AI-powered tool may not always be accurate. Please verify critical information independently.",
+                textColor: 'black',
+                buttonColor: '#3b82f6',
+                buttonText: 'Start Chatting',
+                buttonTextColor: 'white',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: 'white'
+            },
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'Bestqool AI Assistant',
+                titleAvatarSrc: 'https://cdn.shopify.com/s/files/1/0348/5951/5949/files/icon.png?v=1755566001',
+                welcomeMessage: 'Hi there! How can I help?',
+                errorMessage: 'Something is wrong! Please wait a few minutes and try again.',
+                backgroundColor: '#ffffff',
+                backgroundImage: 'enter image path or link',
+                fontSize: 16,
+                starterPrompts: [
+                    "Track Order",
+                    "Extend Warranty"
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#f7f8ff',
+                    textColor: '#303235',
+                    showAvatar: true,
+                    avatarSrc: 'https://cdn.shopify.com/s/files/1/0348/5951/5949/files/icon.png?v=1755566001'
+                },
+                userMessage: {
+                    backgroundColor: '#e70012',
+                    textColor: '#ffffff',
+                    showAvatar: true,
+                    avatarSrc: 'https://cdn.shopify.com/s/files/1/0348/5951/5949/files/customer_avatar.png?v=1755570642'
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#a9a9a9',
+                    maxChars: 500,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: 'transparent',
+                    text: '',
+                    company: '',
+                    companyLink: 'https://www.bestqool.com'
+                }
+            }
+        },
+      });
+    </script>
+  </body>
+</html>
